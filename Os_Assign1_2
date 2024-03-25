@@ -1,0 +1,142 @@
+1] sunbeam@sunbeam-VivoBook-ASUSLaptop-X515DA-M515DA:~/Documents/OsPractice$ ls -lt
+total 20
+drwxrwxr-x 2 sunbeam sunbeam 4096 Mar 25 16:54 Os_Assign1_1
+-rw-rw-r-- 1 sunbeam sunbeam    0 Mar 25 16:10 file1.txt
+-rw-rw-r-- 1 sunbeam sunbeam    0 Mar 25 16:10 file2.txt
+-rw-rw-r-- 1 sunbeam sunbeam    0 Mar 25 16:10 file3.txt
+drwxrwxr-x 2 sunbeam sunbeam 4096 Mar 25 16:03 dir
+-rw-rw-r-- 1 sunbeam sunbeam   22 Mar 25 16:01 cources.txt
+-rw-rw-r-- 1 sunbeam sunbeam   10 Mar 25 15:54 copy.txt
+-rw-rw-r-- 1 sunbeam sunbeam   10 Mar 25 15:53 os
+
+2]ls -S
+dir  Os_Assign1_1  cources.txt  copy.txt  os  file1.txt  file2.txt  file3.txt
+
+3]
+
+4] ls -R
+.:
+copy.txt  cources.txt  dir  file1.txt  file2.txt  file3.txt  os  Os_Assign1_1
+
+./dir:
+
+./Os_Assign1_1:
+Os_Assign1_1  Os_Assign1_2
+
+5] myinfo.txt
+vishakha Hande
+
+i)myinfo.txt
+A/P Umbraj,Tal-Junnar,Dist-Pune
+
+ii)cat myinfo.txt
+vishakha HandeA/P Umbraj,Tal-Junnar,Dist-Pune
+
+6]touch -t 202403261720.55 myinfo.txt - change timestamp of file
+
+7]
+-> mkdir one
+-> cd one
+-> touch 1.txt 11.txt 111.txt
+-> mkdir two
+-> cd two
+-> touch 2.txt 22.txt 222.txt
+-> mkdir three
+-> cd three
+-> touch 3.txt 33.txt 333.txt
+-> mkdir four
+-> cd four
+-> touch 4.txt 44.txt 444.txt
+-> mkdir five
+-> cd five
+-> touch 5.txt 55.txt 555.txt
+-> cd ~ - go to your home directory.
+
+8]
+i) ls Documents/OsPractice/one/two/three/four/five
+555.txt  55.txt  5.txt
+
+ii) Documents/OsPractice/one/two/three/four/44.txt
+vishakha hande
+
+cat Documents/OsPractice/one/two/three/four/44.txt
+vishakha hande   
+
+iii) rm Documents/OsPractice/one/two/three/four/five/555.txt
+ls Documents/OsPractice/one/two/three/four/five
+55.txt  5.txt
+
+iv) cd Documents/OsPractice/one/two/three/four/five
+
+v)cat > /home/sunbeam/Documents/OsPractice/one/two/three/3.txt
+dmc
+
+cat 3.txt
+dmc
+
+vi)ls /home/sunbeam/Documents/OsPractice/one/two
+222.txt  22.txt  2.txt  three
+
+vii)rm /home/sunbeam/Documents/OsPractice/one/two/222.txt
+ls /home/sunbeam/Documents/OsPractice/one/two
+22.txt  2.txt  three
+
+viii)cd /home/sunbeam/Documents/OsPractice/one
+
+ix)rm /home/sunbeam/Documents/OsPractice/one/two/three/four/five/*
+ls /home/sunbeam/Documents/OsPractice/one/two/three/four/five
+
+x)rmdir /home/sunbeam/Documents/OsPractice/one/two/three/four/five
+ls /home/sunbeam/Documents/OsPractice/one/two/three/four
+444.txt  44.txt  4.txt
+
+xi)rm -r /home/sunbeam/Documents/OsPractice/one/two/three/four
+ls /home/sunbeam/Documents/OsPractice/one/two/three
+333.txt  33.txt  3.txt
+
+xii)cd ~ -changes to home directory
+
+9)touch -t 202403261720.55 /home/sunbeam/Documents/OsPractice/one/two/three/3.txt
+=changes timestamp of file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
