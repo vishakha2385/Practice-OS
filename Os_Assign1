@@ -1,0 +1,112 @@
+1] man - shows general manual.
+
+2] uname - Linux
+
+3] pwd - /home/sunbeam/Documents/OsPractice
+
+4] hostname - sunbeam-VivoBook-ASUSLaptop-X515DA-M515DA
+
+5] date - Monday 25 March 2024 03:46:31 PM IST
+
+6] cal -  
+    March 2024       
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+31  
+
+7] ls - Os_Assign1_1 - shows list of directories.
+
+8] dir - Os_Assign1_1 - 
+
+9] cat > cources.txt - creates file and write content inside file.
+dmc
+desd
+dac
+
+10] cat >> courses.txt - appends data inside existing file
+dittis
+AI
+
+11] cp courses.txt copy.txt - copies file content into new file
+
+12] mv courses.txt os - moves file into os directory
+
+13] tac /home/sunbeam/Documents/OsPractice/cources.txt
+AIdittis
+dac
+desd
+dmc
+
+14]rev /home/sunbeam/Documents/OsPractice/cources.txt
+cmd
+dsed
+cad
+sittid
+
+15] mkdir dir - creates directory.
+
+16] cd - Change current directory
+
+17] rm cources.txt - Remove a file.
+
+18] rmdir dir - remove empty directory
+
+19] touch file1.txt file2.txt file3.txt - creates multiple file.
+
+20] sort /home/sunbeam/Documents/OsPractice/cources.txt
+AI
+dac
+desd
+dittis
+dmc
+
+21] uniq /home/sunbeam/Documents/OsPractice/cources.txt
+dmc
+desd
+dac
+dittis
+AI
+
+22] head -2 /home/sunbeam/Documents/OsPractice/cources.txt
+dmc
+desd
+
+23] tail -2 /home/sunbeam/Documents/OsPractice/cources.txt
+dittis
+AI
+
+24] factor 100
+100: 2 2 5 5
+
+25]alias tail='tail -2 /home/sunbeam/Documents/OsPractice/cources.txt'
+tail
+dittis
+AI
+
+26]unalias tail
+
+27] echo $SHELL - /bin/bash
+
+28] ps
+    PID TTY          TIME CMD
+   3833 pts/0    00:00:00 bash
+   4448 pts/0    00:00:00 ps
+
+29] kill
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+
+30] SHELL=/bin/bash
+SESSION_MANAGER=local/sunbeam-VivoBook-ASUSLaptop-X515DA-M515DA:@/tmp/.ICE-unix/1521,unix/sunbeam-VivoBook-ASUSLaptop-X515DA-M515DA:/tmp/.ICE-unix/1521
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_IN:en
+
+ 

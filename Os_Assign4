@@ -1,0 +1,57 @@
+cat > data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+i)wc < data.txt
+  5  19 112
+  
+ii)grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+iii)grep "file" data.txt
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+
+iv)grep -v "files" data.txt
+Linux is open source.
+In Linux everything is file
+
+v)grep "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+vi)grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+vii)grep ".$" data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+
+viii)head -2 data.txt
+Linux is open source.
+In Linux everything is file
+
+ix)tail -3 data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+x)head -n 5 data.txt | tail -n 3
+files have permissions.
+files have inode no.
+files have size.
+
