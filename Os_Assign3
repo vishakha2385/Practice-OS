@@ -1,0 +1,161 @@
+1) ls -a
+.  ..  copy.txt  cources.txt  data.txt  dir  .file1.txt  file2.txt  file3.txt  myinfo.txt  one  os  OS  Os_Assign1_1
+
+2.rename Rename all *.txt files to *.htm
+
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ rename 's/\.txt$/.htm/' *.txt
+
+3.ln -s Create symbolic link (shortcut) for a file
+
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ ln -s file.txt shortcut
+
+4.ln Create hard link for a file // create another reference point for an existng file
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ ln file.txt short.txt
+
+5)stat -c %w data.txt
+2024-03-26 17:12:23.090533659 +0530
+
+6)touch -t 202404231510.50 data.txt -use to change timestamp of file.
+
+7)touch file5.txt - create empty file.
+
+8)tail -5 data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+
+9.init 0, poweroffShutdown (Only for super-user)
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ poweroff
+
+
+10.init 6, rebootReboot (Only for super-user)
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ reboot
+
+11)
+
+12)whoami
+sunbeam
+
+13)tty
+/dev/pts/0
+
+14)who am i Find current user and terminal
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ who am i
+
+15)users
+sunbeam
+
+16)who
+sunbeam  tty2         2024-03-26 15:29 (tty2)
+
+17)grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+egrep "ev?ry" data.txt
+In Linux everything is file
+
+fgrep
+
+18.chmodMake a file as read-only
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ chmod 600 dmc.txt
+
+
+19.chmodMake a file as write, read and execute//600=read, 660=write, 666=execute
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ chmod 600 dmc.txt
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ chmod 660 dmc.txt
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ chmod 666 dmc.txt
+
+20)wc < data.txt 1>stdout.txt
+cat stdout.txt
+  5  19 112
+
+21)who | wc
+      1       5      46
+
+22)head -n 10 copy.txt | tail -n 6
+five
+six
+seven
+eight
+nine
+ten
+
+23)sort copy.txt > sorted.txt
+uniq sorted.txt
+eight
+eleven
+fifteen
+five
+four
+fourteen
+nine
+one
+seven
+six
+ten
+thirteen
+three
+twelve
+two
+
+24)who, grep (using pipe)Display all users not using tty2, tty3, tty4
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ who | grep -vE 'tty2|tty3|tty4'
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ who
+vishakha1  tty2         2024-03-27 22:22 (tty2)
+
+25)ls -S
+dir  one  OS  Os_Assign1_1  data.txt  copy.txt  sorted.txt  myinfo.txt  cources.txt  stdout.txt  os  file2.txt  file3.txt  file5.txt
+
+26)ls | grep -c ".txt"
+9
+
+27.ls, grep (using pipe)Display only hidden files in a directory
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ la -a | grep '^\'
+
+28.tr Convert file contents into uppercase , also learn "-s" option of this command
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ cat dmc.txt | tr "a-z" "A-Z"
+JAVA
+PYTHON
+
+DMC
+C
+
+C++
+.NET
+DBDA
+DAC
+
+DSDDMMC
+DMMMC
+DMMMMMC
+DMMMMMMMC
+DMMMMMMMMMMMMC
+DMMMMMMMMMMMMMMMC
+
+
+
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ cat dmc.txt | tr -s "a-z" "A-Z"
+JAVA
+PYTHON
+
+DMC
+C
+
+C++
+.NET
+DBDA
+DAC
+
+DSDMC
+DMC
+DMC
+DMC
+DMC
+DMC
+
+29.cutSplit the file contents using delimiter and print required fields
+vishakha1@vishakha1-HP-Pavilion-Notebook:~/Desktop/DMC/os/Assignments/Push Assignments/Assignment_3$ cut -d <delimiter> -f <field_number> <filename>
